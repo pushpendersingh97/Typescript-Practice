@@ -142,3 +142,17 @@ employee.fullName = "Bob Smith";
 if (employee.fullName) {
   console.log(employee.fullName);
 }
+
+// Read Only Modifier
+class ReadOnlyModifer {
+    
+    constructor(private readonly name: string){}
+
+    getRead(){
+       // this.name = "hello"; // As it is readonly
+        console.log(`${this.name}`);
+    }
+}
+var readOnlyModifer = new  ReadOnlyModifer("Puspa");
+
+readOnlyModifer.getRead();
