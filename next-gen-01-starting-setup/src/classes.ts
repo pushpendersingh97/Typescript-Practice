@@ -156,3 +156,15 @@ class ReadOnlyModifer {
 var readOnlyModifer = new  ReadOnlyModifer("Puspa");
 
 readOnlyModifer.getRead();
+
+// Static Method and Properties
+
+class StaticPerson {
+    static nameStatic: string = 'Hello I am static';
+    constructor(){
+       // this.nameStatic; // we can't access here the static member. 
+       // StaticPerson.nameStatic;    //We need to call the class name to access it 
+    }
+}
+
+console.log(StaticPerson.nameStatic);
