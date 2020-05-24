@@ -168,3 +168,34 @@ class StaticPerson {
 }
 
 console.log(StaticPerson.nameStatic);
+
+
+// Abstract Classes
+abstract class Penguin {
+    abstract makeSound(): void;     // Abstract make the function to be declared in the sub class 
+
+    move(): void{
+        console.log('Abstaract Class');
+    }
+}
+//new Penguin();  // We can't create an instance of abstract class
+
+class PenguinSubClass extends Penguin {
+    makeSound(){
+        console.log("Make Sound Abstract method")
+    }
+
+    meeting(): void{
+        console.log('Meeting from penguin');
+    }
+}
+
+let penguinAbstarct = new PenguinSubClass();
+penguinAbstarct.meeting();
+penguinAbstarct.makeSound();
+penguinAbstarct.move();
+
+
+
+// Doubts : 
+// Singloton class & private constaructor
