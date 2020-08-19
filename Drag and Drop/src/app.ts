@@ -121,8 +121,8 @@ class ProjectInput {
         if(Array.isArray(userInput)){
             const [title, desc, people] = userInput;
             console.log([title, desc, people]);
+            this.clearInput();
         }
-        this.clearInput();
     }
 
     private configure() {
