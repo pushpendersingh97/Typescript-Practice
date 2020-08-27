@@ -1,4 +1,4 @@
-namespace App {
+
     // Validation Menthod
     export interface Validatable {
         value : string | number;
@@ -29,5 +29,3 @@ namespace App {
 
         return isValid;
     }
-
-}
