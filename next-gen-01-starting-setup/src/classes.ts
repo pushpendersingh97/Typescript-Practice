@@ -1,5 +1,4 @@
 // Classes concept in ts
-
 class Department {
     name : string;
 

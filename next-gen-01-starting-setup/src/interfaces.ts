@@ -1,4 +1,4 @@
-// Interfaces
+// Interfaces=> Also known as  “duck typing” or “structural subtyping”
 // It can only be used to describe the structure.
 interface PersonInterface {
     name: string;
@@ -6,6 +6,7 @@ interface PersonInterface {
 
     greet(phrase: string): void;
 }
+
 //======================================== Class with interface
 class PersonClass implements PersonInterface {
   constructor(n:string, a: number){
