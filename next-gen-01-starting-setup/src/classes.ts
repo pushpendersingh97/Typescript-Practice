@@ -1,6 +1,11 @@
 // Classes concept in ts
+
+/**
+ * Classes use for wrapping  and manipulation 
+ * we can also use POJO
+ */
 class Department {
-    name : string;
+    name : string ;
 
     constructor(n:string){
         this.name = n;
@@ -15,7 +20,6 @@ const accounting = new Department("Accounting");
 accounting.describe();
 
 // Inheritance
-
 class Animal {
     name: string;
     constructor(n: string){
@@ -63,6 +67,7 @@ console.log(studentClass.name);
 // variable is not accesible outside the class. 
 // we can also use private keyword instead of #
 class StudentPrivate {
+    
     #name!: string;         
     constructor(n: string){
         this.#name = n;
@@ -144,12 +149,14 @@ if (employee.fullName) {
 
 // Read Only Modifier
 class ReadOnlyModifer {
-    
+    readonly arrsy : number[] = [1,2];
     constructor(private readonly name: string){}
 
     getRead(){
        // this.name = "hello"; // As it is readonly
         console.log(`${this.name}`);
+
+        
     }
 }
 var readOnlyModifer = new  ReadOnlyModifer("Puspa");

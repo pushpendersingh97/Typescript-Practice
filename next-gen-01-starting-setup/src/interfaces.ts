@@ -1,6 +1,6 @@
 // Interfaces=> Also known as  “duck typing” or “structural subtyping”
 // It can only be used to describe the structure.
-interface PersonInterface {
+interface PersonInterface  {
     name: string;
     age: number;
 
